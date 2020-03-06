@@ -1,2 +1,2 @@
-# esmodules-boilerplate
-A template for creating modules in accordance with the es modules design pattern
+# input.js
+A JavaScript component for generating html input elements

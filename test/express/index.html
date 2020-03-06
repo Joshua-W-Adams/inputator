@@ -7,10 +7,23 @@
     <!-- <link rel="stylesheet" type="text/css" href="dist/<some_css_file>.css"/> -->
   </head>
   <body spellcheck="false">
-    <div>Hello World</div>
+    <div id="container"></div>
   </body>
 </html>
 <!-- <script defer type="module" src="src/js/module.js"></script> -->
 <script type="module">
-  // Some JavaScript Code
+  import inputjs from '/src/js/Module.js';
+  const options = {
+    div: 'container',
+    renderer: null,
+    onClick: null,
+    onFocusOut: null,
+    onHover: null,
+    onKeyUp: null,
+    icon: {
+      innerHTML: null,
+      renderer: null
+    }
+  };
+  inputjs.init(options);
 </script>
