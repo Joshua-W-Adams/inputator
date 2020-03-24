@@ -42,6 +42,7 @@ function _onKeyUpDefault() {
 
 function _containerRenderer() {
   const e = {};
+  e.id = 'inputjs-container';
   e.className = 'inputjs-container';
   e.style = {
     position: 'relative',
@@ -53,6 +54,7 @@ function _containerRenderer() {
 
 function _iconRenderer() {
   const e = {};
+  e.id = 'inputjs-container__icon';
   e.className = 'inputjs-container__icon';
   e.style = {
     opacity: '0.5'
@@ -62,6 +64,7 @@ function _iconRenderer() {
 
 function _inputRenderer() {
   const e = {};
+  e.id = 'inputjs-container__input';
   e.className = 'inputjs-container__input';
   e.name = 'search';
   e.placeholder = 'Input Search Value';
