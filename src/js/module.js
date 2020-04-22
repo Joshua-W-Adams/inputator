@@ -47,7 +47,6 @@ function _containerRenderer() {
   e.style = {
     position: 'relative',
     boxSizing: 'border-box',
-    padding: '0 10px 0 10px'
   };
   return e;
 }
@@ -57,6 +56,8 @@ function _iconRenderer() {
   e.id = 'inputjs-container__icon';
   e.className = 'inputjs-container__icon';
   e.style = {
+    'font-size': '30px',
+    boxSizing: 'border-box',
     opacity: '0.5'
   };
   return e;
@@ -69,11 +70,14 @@ function _inputRenderer() {
   e.name = 'search';
   e.placeholder = 'Input Search Value';
   e.style = {
+    'font-size': '16px',
+    'font-family': 'roboto',
+    padding: '10px',
+    boxSizing: 'border-box',
     width: '100%',
-    border: 'solid 1px rgba(51, 51, 51, 0.3)',
-    borderRadius: '4px',
-    textIndent: '30px',
-    padding: '5px'
+    border: 'solid 1px rgba(0,0,0,.125)',
+    borderRadius: '3px',
+    textIndent: '30px'
   };
   return e;
 }
@@ -126,7 +130,7 @@ function _addInput(container, options) {
 function _addInputIcon(container, options) {
   const cnf = {
     renderer: options.icon.renderer || _iconRenderer,
-    innerHTML: options.icon.innerHTML || '&#x1f50d;'
+    innerHTML: options.icon.innerHTML || '&#8981;'
   };
   const eContainer = _addElement(container, 'div');
   eContainer.style.display = 'inline-block';
