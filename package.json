@@ -1,6 +1,6 @@
 {
   "name": "@joshadams/inputjs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A JavaScript component for generating html input elements",
   "main": "index.js",
   "scripts": {
