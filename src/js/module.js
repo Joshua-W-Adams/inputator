@@ -33,7 +33,7 @@ function _onClickDefault(element) {
 
 function _onFocusOutDefault(element) {
   // set default styling
-  element.style.backgroundColor = '';
+  element.style.backgroundColor = 'rgba(241,243,244,1)';
 }
 
 function _onKeyUpDefault() {
@@ -77,7 +77,8 @@ function _inputRenderer() {
     width: '100%',
     border: 'solid 1px rgba(0,0,0,.125)',
     borderRadius: '3px',
-    textIndent: '30px'
+    textIndent: '30px',
+    backgroundColor: 'rgba(241,243,244,1)'
   };
   return e;
 }
