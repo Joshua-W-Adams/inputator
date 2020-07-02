@@ -171,6 +171,6 @@ function init(options) {
 
 /* =========================== Export Public APIs =========================== */
 
-export default {
+module.exports = {
   init
 };
